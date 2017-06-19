@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-Jenkins
+<b>Jenkins Test <% out.print("JSP"); %></b>
 </body>
 </html>
