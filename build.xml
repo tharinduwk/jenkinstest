@@ -17,8 +17,8 @@
 	<property environment="env" />
 	<property name="TOMCAT_HOME" value="${env.CATALINA_HOME}" />
 	<property name="debuglevel" value="source,lines,vars" />
-	<property name="target" value="1.6" />
-	<property name="source" value="1.6" />
+	<property name="target" value="1.7" />
+	<property name="source" value="1.7" />
 	<property name="project.name" value="${ant.project.name}" />
 	<property name="project.web.dir" value="WebContent" />
 	<property name="project.src.dir" value="src" />
@@ -38,7 +38,7 @@
 	<path id="project.classpath">
 		<pathelement location="${project.classes.dir}" />
 		<path refid="classpath.runtime" />
-		<path refid="classoath.lib" />
+		<path refid="classpath.lib" />
 	</path>
 	<target name="init">
 		<mkdir dir="${project.classes.dir}" />
@@ -50,7 +50,7 @@
 	</target>
 	<target name="clean">
 		<delete dir="${project.classes.dir}" />
-		<delete dir="${project.war}" />
+		<delete file="${project.war}" />
 	</target>
 
 	<target depends="init" name="build" description="Compiling all java files in ${project.src.dir}">
