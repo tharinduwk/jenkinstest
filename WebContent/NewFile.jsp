@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<b>Jenkins Test <% out.print("DevOps Kunch"); %></b>
+<b>Jenkins Test <% out.print("DevOps Bhathiya - Kunch - Saman"); %></b>
 </body>
 </html>
